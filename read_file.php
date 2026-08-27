@@ -1,18 +1,12 @@
 
 <?php
-// Read entire file into a string
-$content = file_get_contents("The 9MP Fall 2025 Application Form.pdf");
-echo $content;
+require 'vendor/autoload.php';
 
-// Read file into an array (one line per element)
-$lines = file("The 9MP Fall 2025 Application Form.pdf");
+use Smalot\PdfParser\Parser;
 
-// Manual open/read/close (more control)
-$handle = fopen("The 9MP Fall 2025 Application Form.pdf", "r");
-if ($handle) {
-    while (($line = fgets($handle)) !== false) {
-        echo $line;
-    }
-    fclose($handle);
-}
+$parser = new Parser();
+$pdf = $parser->parseFile('The 9MP Fall 2025 Application Form.pdf');
+$text = $pdf->getText();
+
+echo $text; // Aha niho ubona plain text yasomwe muri PDF
 ?>
