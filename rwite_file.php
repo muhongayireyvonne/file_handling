@@ -1,6 +1,6 @@
 <?php
 
-file_put_contents("test.txt", "Muraho PHP!");
+file_put_contents("test.txt", "hello!");
 
-echo "Byanditswe neza";
+echo "success";
 ?>
