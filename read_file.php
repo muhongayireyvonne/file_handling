@@ -8,5 +8,5 @@ $parser = new Parser();
 $pdf = $parser->parseFile('The 9MP Fall 2025 Application Form.pdf');
 $text = $pdf->getText();
 
-echo $text; // Aha niho ubona plain text yasomwe muri PDF
+echo ln2br($text); // Aha niho ubona plain text yasomwe muri PDF
 ?>
