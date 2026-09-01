@@ -1,6 +1,6 @@
 <?php
 
-$file = "example.txt";
+$file = "examlpe.text";
 
 if (file_exists($file)) {
     unlink($file);
