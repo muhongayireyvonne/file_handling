@@ -2,7 +2,6 @@
 
 $filename = "text.txt";
 
-// Open in write mode ('w' overwrites, 'a' appends, 'r+' allows read+edit)
 $handle = fopen($filename, "r+");
 
 if ($handle) {
@@ -12,7 +11,7 @@ if ($handle) {
     // Rewind and overwrite
     rewind($handle);
     fwrite($handle, $content);
-    ftruncate($handle, strlen($content)); // remove leftover old content if new is shorter
+    ftruncate($handle, strlen($content)); 
 
     fclose($handle);
     echo "File edited successfully.";
