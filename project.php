@@ -15,12 +15,8 @@ $handle = fopen($file, "a");
 fwrite($handle, "Name: $name | Product: $product | Quantity: $quantity\n");
 fclose($handle);
 
-echo "Data saved successfully!\n";
+echo "Data saved successfully!";
 
 echo file_get_contents($file);
-
-
-
-
 
 ?>
