@@ -1,6 +1,6 @@
 <?php
 
-file_put_contents("test.txt", "hello!");
+file_put_contents("test.txt", "hello");
 
 echo "success";
 ?>
