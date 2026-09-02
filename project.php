@@ -51,8 +51,6 @@ if ($handle) {
 
     echo "Data saved successfully!\n";
 
-} else {
-    echo "Error: Unable to open products.txt\n";
-}
+} 
 
 ?>
